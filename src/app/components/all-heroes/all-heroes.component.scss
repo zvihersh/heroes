@@ -1,0 +1,14 @@
+.my-hero-tab{
+    display: flex;
+    flex-wrap: wrap;
+    .card{
+        margin: 16px;
+    }
+}
+
+::ng-deep.mat-tab-label{
+    flex-grow: 1;
+}
+::ng-deep.mat-tab-label.mat-tab-disabled{
+    flex-grow: 0!important;
+}

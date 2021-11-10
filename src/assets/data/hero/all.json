@@ -1,0 +1,28 @@
+[{
+    "name": "Super Man",
+    "attacker": true,
+    "startingPower": 54,
+    "currentPower": 444,
+    "trainStart": "Wed Nov 10 2021 12:13:20",
+    "trainerUuid": "999d9d9d9",
+    "guid": "lsdfj09es9fj",
+    "suitColors": ["red", "blue"]
+}, {
+    "name": "Spider Man",
+    "attacker": true,
+    "startingPower": 54,
+    "currentPower": 442,
+    "trainStart": "Wed Nov 10 2021 12:13:20",
+    "trainerUuid": "99de9d9d9d9",
+    "guid": "lsseefdfj09es9fj",
+    "suitColors": ["red", "blue"]
+}, {
+    "name": "Iron Man",
+    "attacker": true,
+    "startingPower": 54,
+    "currentPower": 445,
+    "trainStart": "Wed Nov 10 2021 12:13:20",
+    "trainerUuid": "999d9d9d9",
+    "guid": "lsses3feefdfj09es9fj",
+    "suitColors": ["red", "blue"]
+}]

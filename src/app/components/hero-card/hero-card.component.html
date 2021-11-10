@@ -1,0 +1,9 @@
+<mat-card class="card" *ngIf="hero">
+    <h1>{{hero.name}}</h1>
+    <p>{{hero.name}} is {{hero.attacker ? 'an attacker' : 'a defender'}}</p>
+    <p>{{hero.name}} started training at {{hero.trainStart | date: 'dd.MM.yyyy'}}</p>
+    <p style=" display: flex;">{{hero.name}} suit colors are: <span *ngFor="let color of hero.suitColors; let i = index"><div style="width: 8px; height: 8px; margin: 8px" [style.backgroundColor]="color"></div></span></p>
+    <p>starting power: {{hero.startingPower}}</p>
+    <p>current power: {{hero.currentPower}}</p>
+    <button mat-button (click)="onTrain()" *ngIf="hero.canTrain">Train me</button>
+</mat-card>

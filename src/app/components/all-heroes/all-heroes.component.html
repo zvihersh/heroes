@@ -1,0 +1,25 @@
+<div class="cards-container">
+    <mat-tab-group>
+        <mat-tab label="My Heroes">
+            <div class="my-hero-tab">
+                <app-hero-card [hero]="hero" (train)="train(hero)" class="card" *ngFor="let hero of myHeroes"></app-hero-card>
+            </div>
+        </mat-tab>
+        <mat-tab label="All Heroes">
+            <div class="my-hero-tab">
+                <app-hero-card [hero]="hero" (train)="train(hero)" class="card" *ngFor="let hero of heroes"></app-hero-card>
+            </div>
+        </mat-tab>
+        <mat-tab disabled>
+            <ng-template mat-tab-label>
+                <button mat-button [matMenuTriggerFor]="menu">
+                    <mat-icon>more_vert</mat-icon>
+                </button>
+                <mat-menu #menu="matMenu">
+                    <button mat-menu-item (click)="openDialog()">Add Hero</button>
+                    <button mat-menu-item (click)="logout()">Logout</button>
+                </mat-menu>
+            </ng-template>
+      </mat-tab>
+      </mat-tab-group>
+</div>
